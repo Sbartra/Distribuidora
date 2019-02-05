@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Distribuidora Rosales</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel='stylesheet' id='royal-fontawesome-css'  href='https://blog.jjfoodservice.com/wp-content/themes/Royal-2/css/libs/font-awesome.min.css?ver=4.9.8' type='text/css' media='all' />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: url('http://www.fordings.com/images/background-images/paleo.jpg');
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 40px;
+    text-align: center;
+    background: burlywood;
+}
+
+h2 {
+
+      color: brown;
+      text-align: center;
+}
+
+.image img {
+
+border-radius: 8px;
+
+  }
+
+
+.header h1 {
+    font-size: 30px;
+    color: brown;
+}
+
+.fa {
+  padding: 12px;
+  font-size: 20px;
+  width: 40px;
+  text-align: left;
+  text-decoration: none;
+  margin: 3px 1px;
+  border-radius: 40%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: brown;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: transparent;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: transparent;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: transparent;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: burlywood;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: burlywood;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+	top: 2em;
+  color: #8b0000;
+  width: 60%;
+  
+  font-size: 2em;
+
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+
+
+</style>
+</head>
+<body >
+<p id="demo"></p>
+
+<script>
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+  var d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+
+
+<div class="header">
+     <h1></h1>
+    <p class="item-1">DISTRIBUIDORA ROSALES</p>
+    
+<p class="item-2">DISTRIBUIDOR AL POR MAYOR Y MENOR</p>
+
+<p class="item-3">LA VARIEDAD ES NUESTRO EMBLEMA</p>
+    
+  <h2></h2>
+</div>
+
+<div class="topnav">
+  <a href="#">Distribuidora Rosales</a>
+  <a href="#">Rosales Blog</a>
+  <a href="#">Sucursales</a>
+ <a href="#">La Familia Rosales</a>
+  <a href="https://www.google.co.uk/" style="float:right">Google</a>
+
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>NUESTRO EQUIPO</h2>
+      <h5> 05 Diciembre 2018</h5>
+    <div class="image">
+    <center>
+<img src="https://i.ibb.co/D4mMPg2/maxresdefault.jpg" width="200">
+
+<img src="https://i.ibb.co/MRStJ0K/distribuidora-medicamentos.jpg" width="200">
+
+<img src="https://i.ibb.co/dkx6c2R/199005-5-dicas-para-organizar-o-fluxo-de-informacoes-de-uma-distribuidora-1080x540.jpg" width="200">
+
+<img src="https://i.ibb.co/GC7MHP0/20180922-175052.jpg" width="150">
+</center>
+     </div>
+
+
+      <h2><strong>NUESTRO ANIVERSARIO</strong></h2>
+      <p>El mayorista nacional Distribuidora Rosales celebra su cumpleaños número 30 este mes y, a medida que mira hacia el futuro, cree que los elementos del menú respetuosos con el medio ambiente impulsarán el crecimiento en el servicio de alimentos.
+
+        La forma en que hemos estado comiendo simplemente no es sostenible, dijo el CEO del grupo, Senior Rosales.
+        
+        Los gases de efecto invernadero emitidos por la agricultura y el ganado son cada vez más publicitados en los medios de comunicación, junto con el efecto dañino del calentamiento global en los peces. El resultado es un cambio dramático en los hábitos de comer afuera. Los proveedores deben adaptarse, dijo el mayorista.</p>
+    </div>
+    <div class="card">
+<h2>LAS TIENDAS DEBEN ABRAZAR A LAS REDES SOCIALES PARA ALCANZAR SUS METAS ESTE 2019</h2>
+      <h5>05 DICIEMBRE 2018</h5>
+     
+      <p>De acuerdo con los nuevos hallazgos de la compañía Rosales, COMIDA app, los comentarios deben ser brillantes para promocionarse en Facebook e Instagram para impulsar las ventas en el año venidero.
+
+        Las redes sociales representaron a más de 35,000 visitantes en sitios web para llevar construidos por COMIDA app en el último año y 25,000 en ventas, un 52% más que el año anterior.
+        .</p>
+<center>
+<div class="image">
+<img src="https://i.ibb.co/93pzqBX/4k-Awesome-Nature-Wallaper-HD-background-image.jpg" width="600">
+</div>
+</center>
+
+<h2>VIDEOS DE ROSALES</h2>
+
+<center>
+    <iframe width="200" height="200" src="https://www.youtube.com/embed/i4CL9A0vYlw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="200" height="200" src="https://www.youtube.com/embed/eflSxeLJBTU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="200" height="200" src="https://www.youtube.com/embed/IOtwBrMrFSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+    </div>
+  </div>
+
+
+
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>ACERCA DE NOSOTROS</h2>
+<center>
+      <div class="image">
+    
+<img src="https://i.ibb.co/S35Np6d/20181001-090452.jpg" width="200">
+
+</div>
+</center>
+      <p>Como empresa líder en ventas al por mayor, almacenamiento y distribución en el sector de servicios alimentarios, nuestro objetivo será continuar creciendo a nivel nacional al tiempo que operamos un negocio progresivo y rentable.
+        Distribuidora Rosales cumplirá con sus obligaciones de almacenar y distribuir a sus clientes, productos que cumplen con todos los estándares de la industria.
+        La compañía se compromete a proporcionar a los clientes productos de calidad en excelentes condiciones, provenientes de proveedores de renombre y con un alto nivel de servicio.
+        Estamos comprometidos a satisfacer todas las regulaciones aplicables, desarrollar e implementar el sistema de gestión de calidad y monitorear y mejorar continuamente su efectividad.
+        Los objetivos de negocio establecidos en línea con estas políticas serán revisados regularmente.
+        Para lograr estos objetivos, capacitaremos y desarrollaremos a nuestro personal para progresar dentro de la empresa y habilitaremos sus habilidades para mejorar el desempeño de las organizaciones.
+<strong>Rosales
+Gerente Rosales</strong>.</p>
+    </div>
+    <div class="card">
+      <h2>Publicaciones populares</h2>
+      <h3>Descuentos</h3>
+      <p>
+       Mira aqui nuestros mejores descuentos.
+      </p>
+    </div>
+    <div class="card">
+      <h2>Siguenos</h2>
+     
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a> 
+
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+<h2></h2><br>
+<a href="https://amazing-panini-1ea55c.netlify.com/"><strong>Creado por: Segundo Bartra</strong></a>
+</footer>
+
+</body>
+</html>
+
