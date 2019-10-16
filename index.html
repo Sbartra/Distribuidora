@@ -1,402 +1,148 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-
-    <title>Distribuidora </title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel='stylesheet' id='royal-fontawesome-css'  href='https://blog.jjfoodservice.com/wp-content/themes/Royal-2/css/libs/font-awesome.min.css?ver=4.9.8' type='text/css' media='all' />
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-body,h1,h3, h2,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  color: gray;
-  line-height: 1.8;
-}
-
-/* Header/Blog Title */
-.header {
-    padding: 40px;
-    text-align: center;
-    background: burlywood;
-}
-
-h2 {
-
-      color: brown;
-      text-align: center;
-}
-
-.image img {
-
-border-radius: 8px;
-
-  }
-
-
-.header h1 {
-    font-size: 30px;
-    color: brown;
-}
-
-.fa {
-  padding: 12px;
-  font-size: 20px;
-  width: 40px;
-  text-align: left;
-  text-decoration: none;
-  margin: 3px 1px;
-  border-radius: 40%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-/* Style the top navigation bar */
-.topnav {
-    overflow: hidden;
-    background-color: brown;
-}
-
-/* Style the topnav links */
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-    background-color: transparent;
-    color: black;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-    float: left;
-    width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-    float: left;
-    width: 25%;
-    background-color: transparent;
-    padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-    background-color: transparent;
-    width: 100%;
-    padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-    background-color: burlywood;
-    padding: 20px;
-    margin-top: 20px;
-    
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Footer */
-.footer {
-    padding: 20px;
-    text-align: center;
-    background: burlywood;
-    margin-top: 20px;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-        width: 100%;
-        padding: 0;
-    }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-    .topnav a {
-        float: none;
-        width: 100%;
-    }
-}
-
-
-
-.item-1, 
-.item-2, 
-.item-3 {
-	position: absolute;
-  display: block;
-	top: 2em;
-  color: #8b0000;
-  width: 60%;
-  
-  font-size: 2em;
-
-	animation-duration: 20s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-}
-
-.item-1{
-	animation-name: anim-1;
-}
-
-.item-2{
-	animation-name: anim-2;
-}
-
-.item-3{
-	animation-name: anim-3;
-}
-
-@keyframes anim-1 {
-	0%, 8.3% { left: -100%; opacity: 0; }
-  8.3%,25% { left: 25%; opacity: 1; }
-  33.33%, 100% { left: 110%; opacity: 0; }
-}
-
-@keyframes anim-2 {
-	0%, 33.33% { left: -100%; opacity: 0; }
-  41.63%, 58.29% { left: 25%; opacity: 1; }
-  66.66%, 100% { left: 110%; opacity: 0; }
-}
-
-@keyframes anim-3 {
-	0%, 66.66% { left: -100%; opacity: 0; }
-  74.96%, 91.62% { left: 25%; opacity: 1; }
-  100% { left: 110%; opacity: 0; }
-}
-
-
-
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
-</head>
-<body >
-	<div class="header">
-     <h1></h1>
-    <p class="item-1">DISTRIBUIDORA </p>
-    
-<p class="item-2">DISTRIBUIDOR AL POR MAYOR Y MENOR</p>
+<body class="w3-light-grey">
 
-<p class="item-3">LA VARIEDAD ES NUESTRO EMBLEMA</p>
-    
-  <h2></h2>
-</div>
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-text-red w3-button">INICIO</a>
-    <a href="#about" class="w3-bar-item w3-button w3-text-red w3-hide-small"><i class="fa fa-user"></i> NOTICIAS</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-text-red w3-hide-small"><i class="fa fa-th"></i> DEPORTES</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-text-red w3-hide-small"><i class="fa fa-envelope"></i> CONTACTANOS</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-red w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search">BUSQUEDA GOOGLE</i>
-    </a>
-  </div>
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-text-red w3-button" onclick="toggleFunction()">NOTICIAS</a>
-    <a href="#portfolio" class="w3-bar-item w3-text-red w3-button" onclick="toggleFunction()">DEPORTES</a>
-    <a href="#contact" class="w3-bar-item w3-text-red w3-button" onclick="toggleFunction()">CONTACTANOS</a>
-    <a href="#" class="w3-bar-item w3-text-red w3-button">GOOGLE</a>
-  </div>
-</div>
-	
-	
-<!--<p id="demo"></p>
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>MY BLOG</b></h1>
+  <p>Welcome to the blog of <span class="w3-tag">unknown</span></p>
+</header>
 
-<script>
-var myVar = setInterval(myTimer, 1000);
+<!-- Grid -->
+<div class="w3-row">
 
-function myTimer() {
-  var d = new Date();
-  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
-}
-</script>-->
-
-
-
-
-
-
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2>NUESTRO EQUIPO</h2>
-      <h5> 05 Diciembre 2018</h5>
-    <div class="image">
-    <center>
-<img src="https://i.ibb.co/D4mMPg2/maxresdefault.jpg" width="200">
-
-<img src="https://i.ibb.co/MRStJ0K/distribuidora-medicamentos.jpg" width="200">
-
-<img src="https://i.ibb.co/dkx6c2R/199005-5-dicas-para-organizar-o-fluxo-de-informacoes-de-uma-distribuidora-1080x540.jpg" width="200">
-
-<img src="https://i.ibb.co/GC7MHP0/20180922-175052.jpg" width="150">
-</center>
-     </div>
-
-
-      <h2><strong>NUESTRO ANIVERSARIO</strong></h2>
-      <p>El mayorista nacional Distribuidora Rosales celebra su cumpleaños número 30 este mes y, a medida que mira hacia el futuro, cree que los elementos del menú respetuosos con el medio ambiente impulsarán el crecimiento en el servicio de alimentos.
-
-        La forma en que hemos estado comiendo simplemente no es sostenible, dijo el CEO del grupo, Senior Rosales.
-        
-        Los gases de efecto invernadero emitidos por la agricultura y el ganado son cada vez más publicitados en los medios de comunicación, junto con el efecto dañino del calentamiento global en los peces. El resultado es un cambio dramático en los hábitos de comer afuera. Los proveedores deben adaptarse, dijo el mayorista.</p>
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>TITLE HEADING</b></h3>
+      <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
     </div>
-    <div class="card">
-<h2>LAS TIENDAS DEBEN ABRAZAR A LAS REDES SOCIALES PARA ALCANZAR SUS METAS ESTE 2019</h2>
-      <h5>05 DICIEMBRE 2018</h5>
-     
-      <p>De acuerdo con los nuevos hallazgos de la compañía Rosales, COMIDA app, los comentarios deben ser brillantes para promocionarse en Facebook e Instagram para impulsar las ventas en el año venidero.
 
-        Las redes sociales representaron a más de 35,000 visitantes en sitios web para llevar construidos por COMIDA app en el último año y 25,000 en ventas, un 52% más que el año anterior.
-        .</p>
-<center>
-<div class="image">
-<img src="https://i.ibb.co/93pzqBX/4k-Awesome-Nature-Wallaper-HD-background-image.jpg" width="600">
-</div>
-</center>
-
-<h2>NUESTROS VIDEOS</h2>
-
-<center>
-    <iframe width="200" height="200" src="https://www.youtube.com/embed/i4CL9A0vYlw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="200" height="200" src="https://www.youtube.com/embed/eflSxeLJBTU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="200" height="200" src="https://www.youtube.com/embed/IOtwBrMrFSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+    <div class="w3-container">
+      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
     </div>
   </div>
+  <hr>
 
-
-
-
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>ACERCA DE NOSOTROS</h2>
-<center>
-      <div class="image">
-    
-<img src="https://i.ibb.co/S35Np6d/20181001-090452.jpg" width="200">
-
-</div>
-</center>
-      <p>Como empresa líder en ventas al por mayor, almacenamiento y distribución en el sector de servicios alimentarios, nuestro objetivo será continuar creciendo a nivel nacional al tiempo que operamos un negocio progresivo y rentable.
-        Distribuidora Rosales cumplirá con sus obligaciones de almacenar y distribuir a sus clientes, productos que cumplen con todos los estándares de la industria.
-        La compañía se compromete a proporcionar a los clientes productos de calidad en excelentes condiciones, provenientes de proveedores de renombre y con un alto nivel de servicio.
-        Estamos comprometidos a satisfacer todas las regulaciones aplicables, desarrollar e implementar el sistema de gestión de calidad y monitorear y mejorar continuamente su efectividad.
-        Los objetivos de negocio establecidos en línea con estas políticas serán revisados regularmente.
-        Para lograr estos objetivos, capacitaremos y desarrollaremos a nuestro personal para progresar dentro de la empresa y habilitaremos sus habilidades para mejorar el desempeño de las organizaciones.
-<strong>Rosales
-Gerente Rosales</strong>.</p>
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
+    <div class="w3-container">
+      <h3><b>BLOG ENTRY</b></h3>
+      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
     </div>
-    <div class="card">
-      <h2>Publicaciones populares</h2>
-      <h3>Descuentos</h3>
-      <p>
-       Mira aqui nuestros mejores descuentos.
-      </p>
-	    
-	<div class="image">
- <center>   
-<img src="https://i.ibb.co/vVWt4h0/descuento.jpg" width="200">
-</center>
-</div>    
-	    
-    </div>
-    <div class="card">
-      <h2>Siguenos</h2>
-     
-<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-<!--<a href="#" class="fa fa-twitter"></a>-->
-<a href="https://www.linkedin.com/in/segundo-bartra-5b979a175/" class="fa fa-linkedin"></a>
-<a href="#" class="fa fa-youtube"></a>
-<a href="https://www.instagram.com/" class="fa fa-instagram"></a> 
 
+    <div class="w3-container">
+      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+        </div>
+      </div>
     </div>
   </div>
+<!-- END BLOG ENTRIES -->
 </div>
 
-<footer class="footer">
-<h2></h2><br>
-<p>Creado por:<a href="https://segundobartra.netlify.com/"> <strong>Segundo Bartra</strong></a></p>
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="/w3images/avatar_g.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>My Name</b></h4>
+      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+    </div>
+  </div><hr>
+  
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Popular Posts</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Lorem</span><br>
+        <span>Sed mattis nunc</span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Ipsum</span><br>
+        <span>Praes tinci sed</span>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Dorum</span><br>
+        <span>Ultricies congue</span>
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Mingsum</span><br>
+        <span>Lorem ipsum dipsum</span>
+      </li>  
+    </ul>
+  </div>
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+    </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-	
-	
-</script>	
-	
 </body>
 </html>
-
