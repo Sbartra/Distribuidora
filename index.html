@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <link rel='stylesheet' id='royal-fontawesome-css'  href='https://blog.jjfoodservice.com/wp-content/themes/Royal-2/css/libs/font-awesome.min.css?ver=4.9.8' type='text/css' media='all' />
 
@@ -240,13 +241,28 @@ border-radius: 8px;
     
   <h2></h2>
 </div>
-<div class="topnav">
-  <a href="#">Distribuidora</a>
-  <a href="#">Blog</a>
-  <a href="#">Sucursales</a>
- <a href="#">La Familia </a>
-  <a href="https://www.google.co.uk/" style="float:right">Google</a>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-text-red w3-button">INICIO</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-red w3-hide-small"><i class="fa fa-user"></i> NOTICIAS</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-red w3-hide-small"><i class="fa fa-th"></i> DEPORTES</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-red w3-hide-small"><i class="fa fa-envelope"></i> CONTACTANOS</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-red w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search">BUSQUEDA GOOGLE</i>
+    </a>
+  </div>
 
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-text-red w3-button" onclick="toggleFunction()">NOTICIAS</a>
+    <a href="#portfolio" class="w3-bar-item w3-text-red w3-button" onclick="toggleFunction()">DEPORTES</a>
+    <a href="#contact" class="w3-bar-item w3-text-red w3-button" onclick="toggleFunction()">CONTACTANOS</a>
+    <a href="#" class="w3-bar-item w3-text-red w3-button">GOOGLE</a>
+  </div>
 </div>
 	
 	
@@ -369,6 +385,20 @@ Gerente Rosales</strong>.</p>
 <p>Creado por:<a href="https://segundobartra.netlify.com/"> <strong>Segundo Bartra</strong></a></p>
 </footer>
 
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+	
+	
+</script>	
+	
 </body>
 </html>
 
